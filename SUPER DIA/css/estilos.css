@@ -1,0 +1,238 @@
+.colorblanco {
+    color: white;
+}   
+
+body{
+    background-color: rgb(194, 10, 10);
+    font-family: 'Lato', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.italicas{
+    font-style: italic;
+}
+
+.textoderecha{
+    text-align: right;
+}
+
+
+
+.textocentrado{
+    text-align: center;
+}
+
+.bajada{
+    font-size: 20px;
+
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px; 
+
+    position: relative;
+    top: -76px;
+    left: 320px;
+    
+}
+
+.menunavegacion{
+    display: flex;
+    justify-content: right;
+    background-color: aliceblue 
+    
+}
+
+.menunavegacion ul li{
+    display: inline-block;
+    background-color: aliceblue
+    
+}
+
+.subtitulo{
+    margin-top: -60px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/*   index  */
+
+.estructuraIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo"
+                        "foto1 foto2 foto3";
+}
+.tituloIndex{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    grid-area: titulo;
+}
+.foto1{
+    width: 300px;
+    height: 168px;
+    grid-area: foto1;
+}
+.foto2{
+    width: 300px;
+    height: 168px;
+    grid-area: foto2;
+}
+.foto3{
+    width: 300px;
+    height: 168px;
+    grid-area: foto3;
+}
+@media screen and (max-width: 320px){
+    .estructuraIndex{
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+                             "foto1"
+                             "foto2"
+                             "foto3";
+    }
+    .foto1{
+        padding-top: 10px;
+    }
+    .foto2{
+        padding-top: 10px;
+    }
+    .foto3{
+        padding-top: 10px;
+    }
+}
+
+/*   productos  */
+.gridProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo"
+                          "img1 texto1"
+                          "img2 texto2"
+                          "img3 texto3"
+                          "img4 texto4";
+}
+.tituloProductos1{
+    color: white;
+}
+.tituloProductos{
+    grid-area: titulo;
+    text-align: center;
+}
+.img1{
+    grid-area: img1;
+    padding-left: 225px;
+}
+.img2{
+    grid-area: img2;
+    padding-left: 225px;
+}
+.img3{
+    grid-area: img3;
+    padding-left: 225px;
+}
+.img4{
+    grid-area: img4;
+    padding-left: 225px;
+}
+.texto1{
+    grid-area:texto1 ;
+    color: white;
+    padding-top: 100px;
+    padding-left: 25px;
+}
+.texto2{
+    grid-area:texto2 ;
+    color: white;
+    padding-top: 100px;
+    padding-left: 25px;
+}
+.texto3{
+    grid-area:texto3 ;
+    color: white;
+    padding-top: 100px;
+    padding-left: 25px;
+}
+.texto4{
+    grid-area:texto4 ;
+    color: white;
+    padding-top: 100px;
+    padding-left: 25px;
+}
+@media screen and (max-width: 320px){
+    .gridProductos{
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+                            "img1"
+                            "texto1"
+                            "img2"
+                            "texto2"
+                            "img3"
+                            "texto3"
+                            "img4"
+                            "texto4";
+    }
+    .img1{
+        padding-left: 40px;
+    }
+    .img2{
+        padding-left: 40px;
+    }
+    .img3{
+        padding-left: 40px;
+    }
+    .img4{
+        padding-left: 40px;
+    }
+    .texto1{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .texto2{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .texto3{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .texto4{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .logo{
+        width: 45px;
+        height: 45px; 
+    
+        position: relative;
+        top: -30px;
+        left: 150px;
+        
+    }
+    .tituloProductos1{
+        color: white;
+        font-size: 15px;
+    }
+    .menunavegacion{
+        justify-content: left;
+                   }
+.menunavegacion ul li{
+display: block;
+                    }            
+.subtitulo{
+margin-top: -1px;
+}
+   
+
+}
